@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* BASE STYLES */
+@layer base {
+  body {
+    font-size: 1rem;
+  }
+  h1 {
+    @apply  tracking-tight md:tracking-normal text-[1.9rem] md:text-[53px] font-josefin font-bold
+  }
+  h2 {
+    @apply font-josefin font-extrabold text-[28px] md:text-[34px]
+  }
+  h3 {
+    @apply text-[16px] md:text-[18px] font-bold font-lato
+  }
+  h4 {
+    @apply text-[16px] font-josefin font-medium
+  }
+  h5 {
+    @apply text-[10px] md:text-[14px] font-lato font-normal
+  }
+  li {
+    @apply text-[16px] font-medium text-light_gray my-4
+  }
+  p {
+   @apply text-[14px] md:text-[16px]
+  }
+  .p_small {
+  }
+  a {
+    @apply font-lato text-[14px] md:text-[1rem] hover:text-pink
+  }
+  button {
+    @apply bg-pink text-white text-[14px] md:text-[17px] md:px-11 px-8 md:py-3 py-2 rounded-sm font-josefin font-medium
+  }
+  .checkout-btn {
+    @apply bg-lightGreen 
+  }
+  .bg-style {
+    @apply bg-cover bg-no-repeat bg-center;
+  }
+  .sb {
+    @apply border border-red-500;
+  }
+
+  .wrapper {
+    @apply px-44
+  }
+  .wrapper2 {
+    @apply 2xl:mx-[310px] lg:mx-[110px] mx-[.8rem]
+  }
+
+  .container {
+    margin: 0 auto;
+    width: calc(100% - 80px);
+    max-width: 1320px;
+  }
+
+  @media (min-width: 960px) {
+    .container {
+      width: calc(100% - 60px);
+    }
+  }
+
+  @media (min-width: 1440px) {
+    .container {
+      width: calc(100% - 180px);
+    }
+  }
+}
+
+/* CUSTOM COMPONENT STYLES */
+@layer components {
+}
+
+/* CUSTOM UTILITIES STYLES */
+@layer utilities {
+}
+
+.shadow-primary {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+}
+
+.boxShadow {
+  box-shadow: 0px 0px 25px 5px rgba(246, 246, 253, 0.5);
+}
+
+.subscribe-bg{
+  background-image: url("/assets/images/subscribe.png");
+}
+
+.footer_button{
+  @apply bg-pink text-white text-[14px] md:text-[17px] px-4 md:px-9 md:py-2 rounded-sm font-josefin font-medium
+}
+
+
+
+
+
+
